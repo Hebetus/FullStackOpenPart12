@@ -1,0 +1,7 @@
+POST http://localhost:3001/todos
+Content-Type: application/json
+
+{
+    "text": "Set up a workflow",
+    "done": false
+}

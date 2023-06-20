@@ -1,0 +1,17 @@
+services:
+  app:
+    image: todo-frontend
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./public:/usr/src/app/public
+    ports:
+      - 3000:3000
+    command: ["npm", "start"]
+    environment:
+      CI: true
+      CHOKIDAR_USEPOLLING: true
+      WATCHPACK_POLLING: true
+    container_name: todo-frontend

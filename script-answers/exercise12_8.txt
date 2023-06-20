@@ -1,0 +1,115 @@
+Script started on 2023-06-06 19:32:24+03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="212" LINES="16"]
+[?2004h]0;emil@DESKTOP-I9LPU2Q: /mnt/c/Users/emilh/OneDrive/Tiedostot/Fullstack[01;32memil@DESKTOP-I9LPU2Q[00m:[01;34m/mnt/c/Users/emilh/OneDrive/Tiedostot/Fullstack[00m$ docker exec -it tofo[K[Kdo-backend-mongo-1 bash
+[?2004l
+[?2004hroot@a0c82d99a97b:/# ls
+[?2004l
+bin  boot  data  dev  docker-entrypoint-initdb.d  etc  home  js-yaml.js  lib  lib32  lib64  libx32  media  mnt	opt  proc  root  run  sbin  srv  sys  tmp  usr	var
+[?2004hroot@a0c82d99a97b:/# ls -l
+[?2004l
+total 164
+lrwxrwxrwx   1 root root      7 May 22 14:04 bin -> usr/bin
+drwxr-xr-x   2 root root   4096 Apr 18  2022 boot
+drwxr-xr-x   4 root root   4096 Jun  2 01:26 data
+drwxr-xr-x   5 root root    340 Jun  6 12:05 dev
+drwxr-xr-x   1 root root   4096 Jun  6 12:05 docker-entrypoint-initdb.d
+drwxr-xr-x   1 root root   4096 Jun  6 12:05 etc
+drwxr-xr-x   2 root root   4096 Apr 18  2022 home
+-rw-r--r--   1 root root 108975 Jun  2 01:26 js-yaml.js
+lrwxrwxrwx   1 root root      7 May 22 14:04 lib -> usr/lib
+lrwxrwxrwx   1 root root      9 May 22 14:04 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root      9 May 22 14:04 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root     10 May 22 14:04 libx32 -> usr/libx32
+drwxr-xr-x   2 root root   4096 May 22 14:04 media
+drwxr-xr-x   2 root root   4096 May 22 14:04 mnt
+drwxr-xr-x   2 root root   4096 May 22 14:04 opt
+dr-xr-xr-x 236 root root      0 Jun  6 12:05 proc
+drwx------   1 root root   4096 Jun  2 01:26 root
+drwxr-xr-x   5 root root   4096 May 22 14:07 run
+lrwxrwxrwx   1 root root      8 May 22 14:04 sbin -> usr/sbin
+drwxr-xr-x   2 root root   4096 May 22 14:04 srv
+dr-xr-xr-x  11 root root      0 Jun  6 12:05 sys
+drwxrwxrwt   1 root root   4096 Jun  6 12:05 tmp
+drwxr-xr-x   1 root root   4096 May 22 14:04 usr
+drwxr-xr-x   1 root root   4096 May 22 14:07 var
+[?2004hroot@a0c82d99a97b:/# 
+[Kroot@a0c82d99a97b:/# mongosh -u root -p example
+[?2004l
+]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	647f604e829b37f7b6911bd8
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.9.1[0m
+Using MongoDB:		6.0.6
+[1m[33mUsing Mongosh[0m:		1.9.1
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the [1mdisableTelemetry()[0m command.
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2023-06-06T12:05:11.976+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2023-06-06T12:05:12.953+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+   2023-06-06T12:05:12.953+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         72.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the_database
+
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+
+[
+  {
+    _id: ObjectId("647f20f666470ce0d6d2ab21"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("647f20f666470ce0d6d2ab22"),
+    text: [32m'Learn about your present'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne({text[33mtext[39m: [32m'[39m[32mB[39m[32me[39m[32mc[39m[32mo[39m[32mm[39m[32me[39m [32ma[39m [32m1[39m[32m0[39m[32mx[39m [32md[39m[32me[39m[32mv[39m[32me[39m[32ml[39m[32mo[39m[32mp[39m[32me[39m[32mr[39m[32m'[39m, d[36mdo[39mdone[33mdone[39m: fals[33mfalse[39m}=[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m'Become a 10x developer'[39m, [33mdone[39m: [33mfalse[39m}[79G)[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m'Become a 10x developer'[39m, [33mdone[39m: [33mfalse[39m}[79G)
+
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("647f6117829b37f7b6911bd9")
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m'Become a 10x developer'[39m, [33mdone[39m: [33mfalse[39m})[80G[1G[0Jthe_database> db.todos.find({})[32G
+
+[
+  {
+    _id: ObjectId("647f20f666470ce0d6d2ab21"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("647f20f666470ce0d6d2ab22"),
+    text: [32m'Learn about your present'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("647f6117829b37f7b6911bd9"),
+    text: [32m'Become a 10x developer'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+
+[?2004hroot@a0c82d99a97b:/# exit
+[?2004l
+exit
+[?2004h]0;emil@DESKTOP-I9LPU2Q: /mnt/c/Users/emilh/OneDrive/Tiedostot/Fullstack[01;32memil@DESKTOP-I9LPU2Q[00m:[01;34m/mnt/c/Users/emilh/OneDrive/Tiedostot/Fullstack[00m$ exit
+[?2004l
+exit
+
+Script done on 2023-06-06 19:39:06+03:00 [COMMAND_EXIT_CODE="0"]

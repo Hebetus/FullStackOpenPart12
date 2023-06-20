@@ -1,0 +1,86 @@
+Script started on 2023-06-03 13:04:06+03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="212" LINES="16"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;emil@DESKTOP-I9LPU2Q: /mnt/c/Users/emilh/OneDrive/Tiedostot/Fullstack/FullStackOpenPart12[01;32memil@DESKTOP-I9LPU2Q[00m:[01;34m/mnt/c/Users/emilh/OneDrive/Tiedostot/Fullstack/FullStackOpenPart12[00m$ exitcho "hello"xit[Kcho "hello"xit[Kcho "hello"xit[K[Kexitcho "hello"xit[Kcho "hello"xit[Kcho "hello"xit[K[Kdockr [K[Ker container run [K[K[K[K[K[K[K[K[K[K[K[K[K[Krun -it ubuntu bash
+[?2004lUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K837dd4791cdc: Pulling fs layer [1B[1A[2K837dd4791cdc: Downloading [>                                                  ]  310.6kB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=>                                                 ]  928.1kB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [===>                                               ]  1.862MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=====>                                             ]  3.095MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [======>                                            ]  4.021MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [========>                                          ]  4.954MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=========>                                         ]  5.888MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [============>                                      ]  7.134MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [==============>                                    ]   8.69MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [================>                                  ]   9.62MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [==================>                                ]  11.17MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=====================>                             ]  12.72MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [======================>                            ]  13.04MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=======================>                           ]  13.97MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [==========================>                        ]  15.52MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [============================>                      ]  17.07MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [==============================>                    ]  18.31MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=================================>                 ]  19.86MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [===================================>               ]   21.1MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=====================================>             ]  22.03MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=======================================>           ]  23.58MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [==========================================>        ]  25.14MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [=============================================>     ]  26.68MB/29.53MB[1B[1A[2K837dd4791cdc: Downloading [===============================================>   ]  28.23MB/29.53MB[1B[1A[2K837dd4791cdc: Verifying Checksum [1B[1A[2K837dd4791cdc: Download complete [1B[1A[2K837dd4791cdc: Extracting [>                                                  ]  327.7kB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=====>                                             ]  3.277MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [==========>                                        ]  6.226MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=============>                                     ]  8.192MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [================>                                  ]  9.503MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [===================>                               ]   11.8MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [==========================>                        ]  15.73MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=================================>                 ]  19.66MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [======================================>            ]  22.61MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [==========================================>        ]   24.9MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [===========================================>       ]  25.89MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [===============================================>   ]  27.85MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [===============================================>   ]  28.18MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=================================================> ]  29.16MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [=================================================> ]  29.49MB/29.53MB[1B[1A[2K837dd4791cdc: Extracting [==================================================>]  29.53MB/29.53MB[1B[1A[2K837dd4791cdc: Pull complete [1BDigest: sha256:ac58ff7fe25edc58bdf0067ca99df00014dbd032e2246d30a722fa348fd799a5
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@9949918b6ded: /root@9949918b6ded:/# ls -l
+[?2004ltotal 48
+lrwxrwxrwx   1 root root    7 May 22 14:04 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+drwxr-xr-x   2 root root 4096 Apr 18  2022 [01;34mboot[0m
+drwxr-xr-x   5 root root  360 Jun  3 10:04 [01;34mdev[0m
+drwxr-xr-x   1 root root 4096 Jun  3 10:04 [01;34metc[0m
+drwxr-xr-x   2 root root 4096 Apr 18  2022 [01;34mhome[0m
+lrwxrwxrwx   1 root root    7 May 22 14:04 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx   1 root root    9 May 22 14:04 [01;36mlib32[0m -> [01;34musr/lib32[0m
+lrwxrwxrwx   1 root root    9 May 22 14:04 [01;36mlib64[0m -> [01;34musr/lib64[0m
+lrwxrwxrwx   1 root root   10 May 22 14:04 [01;36mlibx32[0m -> [01;34musr/libx32[0m
+drwxr-xr-x   2 root root 4096 May 22 14:04 [01;34mmedia[0m
+drwxr-xr-x   2 root root 4096 May 22 14:04 [01;34mmnt[0m
+drwxr-xr-x   2 root root 4096 May 22 14:04 [01;34mopt[0m
+dr-xr-xr-x 287 root root    0 Jun  3 10:04 [01;34mproc[0m
+drwx------   2 root root 4096 May 22 14:07 [01;34mroot[0m
+drwxr-xr-x   5 root root 4096 May 22 14:07 [01;34mrun[0m
+lrwxrwxrwx   1 root root    8 May 22 14:04 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x   2 root root 4096 May 22 14:04 [01;34msrv[0m
+dr-xr-xr-x  11 root root    0 Jun  3 10:04 [01;34msys[0m
+drwxrwxrwt   2 root root 4096 May 22 14:07 [30;42mtmp[0m
+drwxr-xr-x  14 root root 4096 May 22 14:04 [01;34musr[0m
+drwxr-xr-x  11 root root 4096 May 22 14:07 [01;34mvar[0m
+[?2004h]0;root@9949918b6ded: /root@9949918b6ded:/# [K]0;root@9949918b6ded: /root@9949918b6ded:/# [K]0;root@9949918b6ded: /root@9949918b6ded:/# [K]0;root@9949918b6ded: /root@9949918b6ded:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@9949918b6ded: /root@9949918b6ded:/# mkdir /usr/src/appls -l[K
+[?2004ltotal 52
+lrwxrwxrwx   1 root root    7 May 22 14:04 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+drwxr-xr-x   2 root root 4096 Apr 18  2022 [01;34mboot[0m
+drwxr-xr-x   5 root root  360 Jun  3 10:04 [01;34mdev[0m
+drwxr-xr-x   1 root root 4096 Jun  3 10:04 [01;34metc[0m
+drwxr-xr-x   2 root root 4096 Apr 18  2022 [01;34mhome[0m
+lrwxrwxrwx   1 root root    7 May 22 14:04 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx   1 root root    9 May 22 14:04 [01;36mlib32[0m -> [01;34musr/lib32[0m
+lrwxrwxrwx   1 root root    9 May 22 14:04 [01;36mlib64[0m -> [01;34musr/lib64[0m
+lrwxrwxrwx   1 root root   10 May 22 14:04 [01;36mlibx32[0m -> [01;34musr/libx32[0m
+drwxr-xr-x   2 root root 4096 May 22 14:04 [01;34mmedia[0m
+drwxr-xr-x   2 root root 4096 May 22 14:04 [01;34mmnt[0m
+drwxr-xr-x   2 root root 4096 May 22 14:04 [01;34mopt[0m
+dr-xr-xr-x 287 root root    0 Jun  3 10:04 [01;34mproc[0m
+drwx------   2 root root 4096 May 22 14:07 [01;34mroot[0m
+drwxr-xr-x   5 root root 4096 May 22 14:07 [01;34mrun[0m
+lrwxrwxrwx   1 root root    8 May 22 14:04 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x   2 root root 4096 May 22 14:04 [01;34msrv[0m
+dr-xr-xr-x  11 root root    0 Jun  3 10:04 [01;34msys[0m
+drwxrwxrwt   2 root root 4096 May 22 14:07 [30;42mtmp[0m
+drwxr-xr-x   1 root root 4096 May 22 14:04 [01;34musr[0m
+drwxr-xr-x  11 root root 4096 May 22 14:07 [01;34mvar[0m
+[?2004h]0;root@9949918b6ded: /root@9949918b6ded:/# mkdir ur sr
+[?2004lmkdir: cannot create directory 'usr': File exists
+[?2004h]0;root@9949918b6ded: /root@9949918b6ded:/# cd usr
+[?2004l[?2004h]0;root@9949918b6ded: /usrroot@9949918b6ded:/usr# ls -l
+[?2004ltotal 56
+drwxr-xr-x  2 root root 12288 May 22 14:07 [0m[01;34mbin[0m
+drwxr-xr-x  2 root root  4096 Apr 18  2022 [01;34mgames[0m
+drwxr-xr-x  2 root root  4096 Apr 18  2022 [01;34minclude[0m
+drwxr-xr-x 15 root root  4096 May 22 14:07 [01;34mlib[0m
+drwxr-xr-x  2 root root  4096 May 22 14:04 [01;34mlib32[0m
+drwxr-xr-x  2 root root  4096 May 22 14:07 [01;34mlib64[0m
+drwxr-xr-x  4 root root  4096 May 22 14:04 [01;34mlibexec[0m
+drwxr-xr-x  2 root root  4096 May 22 14:04 [01;34mlibx32[0m
+drwxr-xr-x 10 root root  4096 May 22 14:04 [01;34mlocal[0m
+drwxr-xr-x  2 root root  4096 May 22 14:07 [01;34msbin[0m
+drwxr-xr-x 33 root root  4096 May 22 14:04 [01;34mshare[0m
+drwxr-xr-x  1 root root  4096 Jun  3 10:05 [01;34msrc[0m
+[?2004h]0;root@9949918b6ded: /usrroot@9949918b6ded:/usr# cd src
+[?2004l[?2004h]0;root@9949918b6ded: /usr/srcroot@9949918b6ded:/usr/src# cd app
+[?2004l[?2004h]0;root@9949918b6ded: /usr/src/approot@9949918b6ded:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@9949918b6ded: /usr/src/approot@9949918b6ded:/usr/src/app# touch index.js[8Pcd appsrc[1Pls -lcd usr[1Pls -l
+[?2004ltotal 0
+-rw-r--r-- 1 root root 0 Jun  3 10:06 index.js
+[?2004h]0;root@9949918b6ded: /usr/src/approot@9949918b6ded:/usr/src/app# exit
+[?2004lexit
+[?2004h]0;emil@DESKTOP-I9LPU2Q: /mnt/c/Users/emilh/OneDrive/Tiedostot/Fullstack/FullStackOpenPart12[01;32memil@DESKTOP-I9LPU2Q[00m:[01;34m/mnt/c/Users/emilh/OneDrive/Tiedostot/Fullstack/FullStackOpenPart12[00m$ exit
+[?2004lexit
+
+Script done on 2023-06-03 13:06:32+03:00 [COMMAND_EXIT_CODE="0"]

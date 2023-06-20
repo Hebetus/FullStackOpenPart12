@@ -1,0 +1,22 @@
+{
+  "name": "todo-express-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon --legacy-watch -L ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.1.4",
+    "express": "~4.16.1",
+    "mongoose": "^5.13.2",
+    "morgan": "~1.9.1",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
